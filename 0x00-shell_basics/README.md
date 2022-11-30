@@ -142,3 +142,29 @@ $
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **4-listmorefiles**
+
+### 5. I love numbers
+* Write a script that displays current directory content in
+   * Long format
+   * with user and group IDs displayed numerically
+   * And hidden files (Starting with **.**)
+
+Example:
+```
+$ ./5-listfilesdigitonly
+total 32
+drwxr-xr-x@ 6 501 20 204 Jan 25 00:29 .
+drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
+-rwxr-xr-x@ 1 501 20 18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@ 1 501 20 18 Jan 25 00:23 1-listfiles
+-rwxr-xr-x@ 1 501 20 19 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@ 1 501 20 20 Jan 25 00:39 3-listfiles
+-rwxr-xr-x@ 1 501 20 18 Jan 25 00:41 4-listmorefiles
+-rwxr-xr-x@ 1 501 20 18 Jan 25 00:43 5-listfilesdigitonly
+$
+```
+
+### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **5-listfilesdigitonly**
