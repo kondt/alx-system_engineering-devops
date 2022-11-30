@@ -231,4 +231,25 @@ $
 ### Repo:
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
-* File: **9-firstdirdeletion
+* File: **9-firstdirdeletion**
+
+### 10. Back to the future
+* Write a script that changes the working directory to the previous one
+
+Example:
+```
+julien@ubuntu:/tmp$ pwd
+/tmp
+julien@ubuntu:/tmp$ cd /var
+julien@ubuntu:/var$ pwd
+/var
+julien@ubuntu:/var$ source ./10-back
+/tmp
+julien@ubuntu:/tmp$ pwd
+/tmp
+```
+
+### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **10-back**
