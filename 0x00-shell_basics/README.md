@@ -80,3 +80,24 @@ $
 tHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **1-listit**
+
+### 2. There is no place like home
+* Write a script that changes the working directory to the user's home directory.
+   * Note: Shell variables are not allowed
+
+Example
+```
+julien@ubuntu:/tmp$ pwd
+/tmp
+julien@ubuntu:/tmp$ echo $HOME
+/home/julien
+julien@ubuntu:/tmp$ source ./2-bring_me_home
+julien@ubuntu:~$ pwd
+/home/julien
+julien@ubuntu:~$
+```
+
+### Repo:
+tHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **2-bring_me_home**
