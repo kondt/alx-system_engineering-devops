@@ -253,3 +253,15 @@ julien@ubuntu:/tmp$ pwd
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **10-back**
+
+### 11. Lists
+* Write a script that lists all files (even ones with names beginnign with a period character, which are normally hidden)
+   * in the current directory
+   * the parent of the working directory and
+   * the **/boot** directory
+   * (in this order), in long format
+
+### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **11-lists**
