@@ -280,3 +280,25 @@ Note that depending on the file, the output of the script will be different
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **12-file_type**
+
+### 13. We are symbols, and inhabit symbols
+* Create a symbolic link to **/bin/ls**, named **__ls__**. The symbolic link should be created in the current working directory
+
+Example:
+```
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
+total 144
+drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 03:24 .
+drwxrwxrwt 12 root   root   139264 Sep 20 03:24 ..
+ubuntu@ip-172-31-63-244:/tmp/sym$./13-symbolic_link
+ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
+total 144
+drwxrwxr-x  2 ubuntu ubuntu   4096 Sep 20 03:24 .
+drwxrwxrwt 12 root   root   139264 Sep 20 03:24 ..
+lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -> /bin/ls
+```
+
+### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **13-symbolic_link**
