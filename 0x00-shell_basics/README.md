@@ -184,3 +184,19 @@ $
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **6-firstdirectory**
+
+### 7. Betty in my first directory
+* Move the file **betty** from **/tmp** to **/tmp/my_first_directory**
+
+Example:
+```
+$ ./7-movethatfile
+$ ls /tmp/my_first_directory/
+betty
+$
+```
+
+### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **7-movethatfile**
