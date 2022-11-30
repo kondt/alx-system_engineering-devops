@@ -302,3 +302,16 @@ lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -> /bin/ls
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **13-symbolic_link**
+
+### 14. Copy HTML files
+* Create a script that 
+   * copies all the HTML files from the current working directory to the parent of the working directory,
+   * but only copy files that did not exist in the parent of the working directory or
+   * were newer than the versions in the parent of the working directory.
+
+* You can consider that all HTML files have the extension **.html**
+
+### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **14-copy_html**
