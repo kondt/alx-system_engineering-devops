@@ -140,5 +140,5 @@ $
 
 ### Repo:
 * GitHub repository: **alx-system_engineering-devops**
-* Directory: 0x00-shell_basics
-* File: 4-listmorefiles
+* Directory: **0x00-shell_basics**
+* File: **4-listmorefiles**
