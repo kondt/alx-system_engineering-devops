@@ -98,6 +98,6 @@ julien@ubuntu:~$
 ```
 
 ### Repo:
-tHub repository: **alx-system_engineering-devops**
+* GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **2-bring_me_home**
