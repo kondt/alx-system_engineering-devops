@@ -168,3 +168,19 @@ $
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **5-listfilesdigitonly**
+
+### 6. Welcome
+* Create a script that creates a directory named **my_first_directory** in the **/tmp** directory.
+
+Example:
+```
+$ ./6-firstdirectory
+$ file /tmp/my_first_directory/
+/tmp/my_first_directory/: directory
+$
+```
+
+### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **6-firstdirectory**
