@@ -402,3 +402,30 @@ julien@ubuntu:/tmp/h$
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **102-tree**
+
+### 18. Life is a series of commas, not periods
+* Write a command that lists all the files and directories of the current directory, seperated by commas (**,**)
+   * Directory names should end with a slash (**/**)
+   * Files and directories starting with a dot (**.**) should be listed
+   * The listing should be alpha ordered, except for the directories **.** and **..** which should be listed at the very beginning
+   * Only digits and letters are used to sort; Digits should come first
+   * You can assume that all the files we will test with will have at least one letter or one digit
+   * The listing should end with a new line
+
+Example:
+```
+ubuntu@ubuntu:~/$ ls -a
+
+.  ..  0-commas  0-commas-checks  1-empty_casks  2-gifs  3-directories  4-zeros  5-rot13  6-odd  7-sort_rot13  Makefile  quote  .test  test_dir  test.var
+
+ubuntu@ubuntu:~/$ ./103-commas
+
+./, ../, 0-commas, 0-commas-checks/, 1-empty_casks, 2-gifs, 3-directories, 4-zeros, 5-rot13, 6-odd, 7-sort_rot13, Makefile, quote, .test, test_dir/, test.var
+
+ubuntu@ubuntu:~/$
+```
+
+### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **103--commas**
