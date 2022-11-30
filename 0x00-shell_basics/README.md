@@ -265,3 +265,18 @@ julien@ubuntu:/tmp$ pwd
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x00-shell_basics**
 * File: **11-lists**
+
+### 12. File type
+* Write a script that prints the type of the file named **iamafile**. The file **iamafile** will be in the **/tmp** directory when the script is run
+
+Example:
+```
+ubuntu@ip-172-31-63-244:~$ ./12-file_type
+/tmp/iamafile: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=bd39c07194a778ccc066fc963ca152bdfaa3f971, stripped
+```
+Note that depending on the file, the output of the script will be different
+
+### Repo
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x00-shell_basics**
+* File: **12-file_type**
