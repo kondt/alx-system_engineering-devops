@@ -29,3 +29,13 @@ All projects were tested will be auto-corrected with Ubuntu 20.04LTS.
 * Keyboard Shortcuts for Bash
 * LTS
    * What does **LTS** mean?
+
+## 0x01. Shell, permissions
+### Learning Objectives
+* Permissions
+* Other Man Pages
+   * Create user
+   * Create group
+   * Print real and effective user and group IDs
+   * Print the groups a user is in
+   * Print the effective userid
