@@ -39,3 +39,15 @@ All projects were tested will be auto-corrected with Ubuntu 20.04LTS.
    * Print real and effective user and group IDs
    * Print the groups a user is in
    * Print the effective userid
+
+# 0x02. Shell, I/O Redirections and filters
+### Learning Objectives
+* Shell, I/O Redirections
+* Special Characters
+* Other Man pages
+   * How to display a line of text
+   * How to concatenate files and print on the standart output
+   * How to reverse a string
+   * How to remove sections from each line of files
+   * What is the **/etc/passwd** file and what is its format
+   * What is the **/etc/passwd** file and what is its format
