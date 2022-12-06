@@ -40,7 +40,7 @@ All projects were tested will be auto-corrected with Ubuntu 20.04LTS.
    * Print the groups a user is in
    * Print the effective userid
 
-# 0x02. Shell, I/O Redirections and filters
+## 0x02. Shell, I/O Redirections and filters
 ### Learning Objectives
 * Shell, I/O Redirections
 * Special Characters
@@ -51,3 +51,14 @@ All projects were tested will be auto-corrected with Ubuntu 20.04LTS.
    * How to remove sections from each line of files
    * What is the **/etc/passwd** file and what is its format
    * What is the **/etc/passwd** file and what is its format
+
+## 0x03. Shell, init files, variables and expansions
+### Learning Objectives
+* What happens when you type **$ ls -l *.txt**
+* Shell Initialization Files
+* Variables
+* Expansions
+* Shell Arithmetic
+* The **alias** Command
+* Other **help** pages
+   * How to execute commands from a file in the current shell
