@@ -868,3 +868,9 @@ julien@ubuntu:/tmp/0x02$
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x02-shell_redirections**
 * File: **102-acrostic**
+
+### 26. The biggest fan
+Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+* Order by number of requests, most active host or IP at the top
+* Use of **grep**, **egrep**, **fgrep** or **rgrep**
+Format:
