@@ -197,7 +197,7 @@ Note: The output will differ, depending on the content of the file **iacta**
 * File: **6-third_line**
 
 ### 7. It is a good file that cuts iron without making a noise
-Script that creates a file named exactly **\\*\\\\'"Best School"\\'\\\\*$** which contains the text
+Script that creates a file named exactly **\\*\\\\'"Best School"\\'\\\\\*$** which contains the text
 **Best School** ending by a new line
 ```
 julien@ubuntu:~/shell$ ls && ./7-file && ls -l && cat -e \\*
