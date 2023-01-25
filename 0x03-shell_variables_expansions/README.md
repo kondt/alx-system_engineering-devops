@@ -149,3 +149,171 @@ julien@ubuntu:/tmp/0x03$
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x03-shell_variables_expansions**
 * File: **4-global_variables**
+
+### 5. Local variables
+Create a script that lists all local variables and environment variables, and functions.
+
+```
+julien@ubuntu:/tmp/0x03$ . ./5-local_variables
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extglob:extquote:force_fignore:histappend:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_COMPLETION_COMPAT_DIR=/etc/bash_completion.d
+BASH_LINENO=()
+BASH_REMATCH=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="3" [2]="46" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='4.3.46(1)-release'
+CLUTTER_IM_MODULE=xim
+COLUMNS=133
+COMPIZ_CONFIG_PROFILE=ubuntu
+COMP_WORDBREAKS=$' \t\n"\'><=;|&(:'
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-Fg27Lr20bq
+DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+DESKTOP_SESSION=ubuntu
+[...]
+julien@ubuntu:/tmp/0x03$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **5-local_variables**
+
+### 6. Local variable
+Create a script that creates a new local variable.
+* Name: **BEST**
+* Value: **School**
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **6-create_local_variable**
+
+### 7. Global variable
+Create a script that creates a new global variable
+* Name: **BEST**
+* Value: **School**
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **7-create_global_variable**
+
+### 8.Every addition to true knowledge is an addition to human power
+Write a script that prints the result of the addition of 128 with the value\
+stored in the environemnt variable **TRUEKNOWLEDGE**, followed by a new line.
+
+```
+julien@production-503e7013:~$ export TRUEKNOWLEDGE=1209
+julien@production-503e7013:~$ ./8-true_knowledge | cat -e
+1337$
+julien@production-503e7013:~$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **8-true_knowledge**
+
+### 9. Divide and rule
+Write a script that prints the result of **POWER** divided by **DIVIDE**, followed by a new line.
+* **POWER** and **DIVIDE** are environment variables
+
+```
+julien@production-503e7013:~$ export POWER=42784
+julien@production-503e7013:~$ export DIVIDE=32
+julien@production-503e7013:~$ ./9-divide_and_rule | cat -e
+1337$
+julien@production-503e7013:~$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops*8
+* Directory: **0x03-shell_variables_expansions**
+* File: **9-divide_and_rule**
+
+### 10. Love is anterior to life, posterior to death, intial of creation, and the exponent of breath
+Write a script that displays the result of **BREATH** to the power **LOVE**
+* **BREATH** and **LOVE** are environment variables
+* The script should display the result, followed by a new line
+
+```
+julien@production-503e7013:~/$ export BREATH=4
+julien@production-503e7013:~/$ export LOVE=3
+julien@production-503e7013:~/$ ./10-love_exponent_breath
+64
+julien@production-503e7013:~/$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **10-love_exponent_breath**
+
+### 11. There are 10 types of people in the world -- Those who understand binary, and those who don't
+Write a script that converts a number from base 2 to base 10.
+* The number in base 2 is stored in the environment variable **BINARY**
+* The script should display the number in base 10, followed by a new line
+
+```
+julien@production-503e7013:~/$ export BINARY=10100111001
+julien@production-503e7013:~/$ ./11-binary_to_decimal
+1337
+julien@production-503e7013:~/$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **11-binary_to_decimal**
+
+### 12. Combination
+Create a script that prints all possible combinations of two letters, except **oo**.
+* Letters are lower case, from **a** to **z**
+* One combination per line
+* The output should be alpha ordered, starting with **aa**
+* Do not print **oo**
+* Your script file should contain maximum 64 characters
+
+```
+julien@ubuntu:/tmp/0x03$ echo $((26 ** 2 -1))
+675
+julien@ubuntu:/tmp/0x03$ ./12-combinations | wc -l
+675
+julien@ubuntu:/tmp/0x03$
+julien@ubuntu:/tmp/0x03$ ./12-combinations | tail -303 | head -10
+oi
+oj
+ok
+ol
+om
+on
+op
+oq
+or
+os
+julien@ubuntu:/tmp/0x03$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **12-combinations**
+
+### 13. Floats
+Write a script that prints a number with two decimal places, followed by a new line.
+
+The number will be stored in the environment variable **NUM**.
+
+```
+ubuntu@ip-172-31-63-244:~/0x03$ export NUM=0
+ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
+0.00
+ubuntu@ip-172-31-63-244:~/0x03$ export NUM=98
+ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
+98.00
+ubuntu@ip-172-31-63-244:~/0x03$ export NUM=3.14159265359
+ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
+3.14
+ubuntu@ip-172-31-63-244:~/0x03$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **13-print_float**
