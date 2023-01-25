@@ -52,7 +52,8 @@ Create a script that prints **hello user**, where user is the current Linux user
 
 ```
 julien@ubuntu:/tmp/0x03$ id
-uid=1000(julien) gid=1000(julien) groups=1000(julien),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
+uid=1000(julien) gid=1000(julien) groups=1000(julien),4(adm),24(cdrom),\
+27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
 julien@ubuntu:/tmp/0x03$ ./1-hello_you 
 hello julien
 julien@ubuntu:/tmp/0x03$
@@ -63,3 +64,37 @@ julien@ubuntu:/tmp/0x03$
 * File: **1-hello_you**
 
 ### 2. The path to success is to take massive, determined action
+Add **/action** to the **PATH**. **/action** should be the last directory the shell looks into when looking for a program.
+
+```
+julien@ubuntu:/tmp/0x03$ echo $PATH
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/us\
+r/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+julien@ubuntu:/tmp/0x03$ source ./2-path 
+julien@ubuntu:/tmp/0x03$ echo $PATH
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/us\
+r/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/action
+julien@ubuntu:/tmp/0x03$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **2-path**
+
+### 3. If the path be beautiful, let us not ask where it leads
+Create a script that counts the number of directories in the **PATH**.
+
+```
+julien@ubuntu:/tmp/0x03$ echo $PATH
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+julien@ubuntu:/tmp/0x03$ . ./3-paths 
+11
+julien@ubuntu:/tmp/0x03$ PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello
+julien@ubuntu:/tmp/0x03$ . ./3-paths 
+12
+julien@ubuntu:/tmp/0x03$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **3-paths**
