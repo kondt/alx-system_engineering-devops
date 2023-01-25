@@ -52,7 +52,7 @@ Create a script that prints **hello user**, where user is the current Linux user
 
 ```
 julien@ubuntu:/tmp/0x03$ id
-uid=1000(julien) gid=1000(julien) groups=1000(julien),4(adm),24(cdrom),\
+uid=1000(julien) gid=1000(julien) groups=1000(julien),4(adm),24(cdrom),
 27(sudo),30(dip),46(plugdev),113(lpadmin),128(sambashare)
 julien@ubuntu:/tmp/0x03$ ./1-hello_you 
 hello julien
@@ -68,11 +68,11 @@ Add **/action** to the **PATH**. **/action** should be the last directory the sh
 
 ```
 julien@ubuntu:/tmp/0x03$ echo $PATH
-/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/us\
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/us
 r/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 julien@ubuntu:/tmp/0x03$ source ./2-path 
 julien@ubuntu:/tmp/0x03$ echo $PATH
-/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/us\
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/us
 r/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/action
 julien@ubuntu:/tmp/0x03$
 ```
@@ -86,10 +86,13 @@ Create a script that counts the number of directories in the **PATH**.
 
 ```
 julien@ubuntu:/tmp/0x03$ echo $PATH
-/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr
+/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 julien@ubuntu:/tmp/0x03$ . ./3-paths 
 11
-julien@ubuntu:/tmp/0x03$ PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:::::/hello
+julien@ubuntu:/tmp/0x03$ PATH=/home/julien/bin:/home/julien/.local/bin:/usr/
+local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/loca
+l/games:/snap/bin:::::/hello
 julien@ubuntu:/tmp/0x03$ . ./3-paths 
 12
 julien@ubuntu:/tmp/0x03$
@@ -98,3 +101,51 @@ julien@ubuntu:/tmp/0x03$
 * GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x03-shell_variables_expansions**
 * File: **3-paths**
+
+### 4. Global variables
+Create a script that lists environment variables.
+
+```
+julien@ubuntu:/tmp/0x03$ source ./4-global_variables
+CC=gcc
+CDPATH=.:~:/usr/local:/usr:/
+CFLAGS=-O2 -fomit-frame-pointer
+COLORTERM=gnome-terminal
+CXXFLAGS=-O2 -fomit-frame-pointer
+DISPLAY=:0
+DOMAIN=hq.garrels.be
+e=
+TOR=vi
+FCEDIT=vi
+FIGNORE=.o:~
+G_BROKEN_FILENAMES=1
+GDK_USE_XFT=1
+GDMSESSION=Default
+GNOME_DESKTOP_SESSION_ID=Default
+GTK_RC_FILES=/etc/gtk/gtkrc:/nethome/franky/.gtkrc-1.2-gnome2
+GWMCOLOR=darkgreen
+GWMTERM=xterm
+HISTFILESIZE=5000
+history_control=ignoredups
+HISTSIZE=2000
+HOME=/nethome/franky
+HOSTNAME=octarine.hq.garrels.be
+INPUTRC=/etc/inputrc
+IRCNAME=franky
+JAVA_HOME=/usr/java/j2sdk1.4.0
+LANG=en_US
+LDFLAGS=-s
+LD_LIBRARY_PATH=/usr/lib/mozilla:/usr/lib/mozilla/plugins
+LESSCHARSET=latin1
+LESS=-edfMQ
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+LEX=flex
+LOCAL_MACHINE=octarine
+LOGNAME=franky
+[...]
+julien@ubuntu:/tmp/0x03$
+```
+#### Repo:
+* GitHub repository: **alx-system_engineering-devops**
+* Directory: **0x03-shell_variables_expansions**
+* File: **4-global_variables**
