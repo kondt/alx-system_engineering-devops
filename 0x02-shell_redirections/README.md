@@ -198,6 +198,7 @@ Note: The output will differ, depending on the content of the file **iacta**
 
 ### 7. It is a good file that cuts iron without making a noise
 Script that creates a file named exactly **\\*\\\\'"Best School"\\'\\\\\*$\\?\\\*\\\*\\\*\\\*\\\*:)** which contains the text
+
 **Best School** ending by a new line
 ```
 julien@ubuntu:~/shell$ ls && ./7-file && ls -l && cat -e \\*
@@ -212,6 +213,6 @@ Best School$
 julien@ubuntu:~/shell$
 ```
 #### Repo:
-* GitHub repository: **alx-system_engineering-devops**
+ GitHub repository: **alx-system_engineering-devops**
 * Directory: **0x02-shell_redirections**
 * File: **7-file**
